@@ -1,4 +1,4 @@
-import 'package:amazon/screens/bottomNvaigationBarr.dart';
+import 'package:amazon/screens/bottomnvaigationbarr.dart';
 import 'package:flutter/material.dart';
 
 void main() {

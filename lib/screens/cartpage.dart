@@ -46,10 +46,10 @@ class _CartpageState extends State<Cartpage> {
               ],
             ),
             const Gap(10),
-            Padding(
-              padding: const EdgeInsets.only(left: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 10),
               child: Row(
-                children: const [
+                children: [
                   Text(
                     'Subtotal',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -62,10 +62,10 @@ class _CartpageState extends State<Cartpage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 10),
               child: Row(
-                children: const [
+                children: [
                   Text('EMI Available'),
                   Gap(8),
                   Text(
@@ -76,10 +76,10 @@ class _CartpageState extends State<Cartpage> {
               ),
             ),
             const Gap(10),
-            Padding(
-              padding: const EdgeInsets.only(left: 10),
+            const Padding(
+              padding: EdgeInsets.only(left: 10),
               child: Row(
-                children: const [
+                children: [
                   Icon(
                     Icons.check_circle,
                     color: Colors.green,
@@ -93,10 +93,10 @@ class _CartpageState extends State<Cartpage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 34),
+            const Padding(
+              padding: EdgeInsets.only(left: 34),
               child: Row(
-                children: const [
+                children: [
                   Text('option at checkout'),
                   Gap(6),
                   Text(
@@ -164,38 +164,43 @@ class _CartpageState extends State<Cartpage> {
                           ),
                         ),
                       ),
-                      Gap(30),
+                      const Gap(34),
                       Container(
-                        height: 30,
-                        width: 130, 
-                        color: Colors.amber,
+                        height: 35,
+                        width: 125,
+                        decoration: BoxDecoration(
+                            border: Border.all(),
+                            borderRadius: BorderRadius.circular(6)),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Icon(Icons.delete_outlined),
-                            Text(
+                            Container(child: const Icon(Icons.delete_outlined)),
+                            const Text(
                               '1',
                               style: TextStyle(color: Colors.lightBlue),
                             ),
-                            Icon(Icons.add)
+                            const Icon(Icons.add)
                           ],
                         ),
                       ),
-                      Gap(10),
-                      Container(
-                        height: 40,
-                        child: Center(
-                          child: TextButton(
-                              onPressed: () {},
-                              child: Text(
-                                'See more like this',
-                                style: TextStyle(color: Colors.black),
-                              )),
+                      const Gap(10),
+                      InkWell(
+                        child: Container(
+                          height: 40,
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                  color:
+                                      const Color.fromARGB(216, 137, 137, 137)),
+                              color: const Color.fromARGB(255, 255, 255, 255),
+                              borderRadius: BorderRadius.circular(5)),
+                          child: const Center(
+                            child: Text(
+                              ' See more like this ',
+                              style: TextStyle(
+                                  color: Color.fromARGB(255, 35, 35, 35)),
+                            ),
+                          ),
                         ),
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.black),
-                            color: const Color.fromARGB(255, 255, 255, 255),
-                            borderRadius: BorderRadius.circular(5)),
                       ),
                     ],
                   ),
@@ -211,28 +216,28 @@ class _CartpageState extends State<Cartpage> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(
+                              const Text(
                                 'Apple Iphone 14 pro(128 GB) -',
                                 style: TextStyle(
                                     fontSize: 13, fontWeight: FontWeight.w600),
                                 overflow: TextOverflow.ellipsis,
                                 textAlign: TextAlign.start,
                               ),
-                              Text(
+                              const Text(
                                 'Deep puprle',
                                 style: TextStyle(fontSize: 13),
                               ),
-                              Text(
+                              const Text(
                                 '₹1,44,995',
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w900),
                               ),
-                              Text('Eligible for Free Shipping',
+                              const Text('Eligible for Free Shipping',
                                   style: TextStyle(
                                     fontSize: 13,
                                   )),
-                              Gap(8),
-                              Row(
+                              const Gap(8),
+                              const Row(
                                 children: [
                                   Text(
                                     'Colour:',
@@ -245,7 +250,7 @@ class _CartpageState extends State<Cartpage> {
                                   )
                                 ],
                               ),
-                              Row(
+                              const Row(
                                 children: [
                                   Text(
                                     'Size : ',
@@ -257,33 +262,36 @@ class _CartpageState extends State<Cartpage> {
                                   ),
                                 ],
                               ),
-                              Text(
+                              const Text(
                                 '₹ 20 Cashback applied . buy\nother items in cart',
                                 style: TextStyle(
                                     fontSize: 13, color: Colors.green),
                               ),
+                              const Gap(3),
                               Row(
                                 children: [
                                   Container(
                                     height: 30,
                                     width: 70,
                                     decoration: BoxDecoration(
-                                        border: Border.all(color: Colors.black),
+                                        border: Border.all(
+                                            color: const Color.fromARGB(
+                                                216, 137, 137, 137)),
                                         borderRadius: BorderRadius.circular(5)),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text('Save'),
                                     ),
                                   ),
-                                  Gap(10),
+                                  const Gap(10),
                                   Container(
                                     height: 30,
                                     width: 100,
                                     decoration: BoxDecoration(
                                         border: Border.all(
                                             color: const Color.fromARGB(
-                                                255, 100, 100, 100)),
+                                                216, 137, 137, 137)),
                                         borderRadius: BorderRadius.circular(5)),
-                                    child: Center(
+                                    child: const Center(
                                       child: Text('Save for later'),
                                     ),
                                   )

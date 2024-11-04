@@ -63,7 +63,7 @@ class _BottomTabBarState extends State<BottomTabBar> {
         body: const TabBarView(
           children: [
             Cartpage(),
-            Buyagainpage(),
+            BuyagainPagege(),
             Menupage(),
           ],
         ),

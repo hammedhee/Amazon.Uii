@@ -15,10 +15,10 @@ class _BottomnvaigationbarState extends State<Bottomnvaigationbarr> {
   var indexForBottomNbar = 0;
 
   final amazonScreens = [
-    Homepage(),
-    Userpage(),
-    BottomTabBar(),
-    Menupage(),
+    const Homepage(),
+    const Userpage(),
+    const BottomTabBar(),
+    const Menupage(),
   ];
   @override
   Widget build(BuildContext context) {
